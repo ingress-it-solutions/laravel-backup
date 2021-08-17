@@ -1,0 +1,45 @@
+{
+  "name": "ingress-it-solutions/laravel-backup",
+  "description": "Backup your laravel application database.",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "laravel backup",
+    "database",
+    "backup",
+    "database backup",
+    "custom database backup laravel",
+    "laravel custom backup",
+    "custom backup"
+  ],
+  "type": "library",
+  "authors": [{
+    "name": "Ingress Team",
+    "email": "info@ingressit.com"
+  }],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ingress\\LaravelBackup\\": "src"
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Ingress\\LaravelBackup\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
